@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { Theme } from 'nexus-design-tokens/dist/web/Theme';
 
 export type State = {
     /**
@@ -7,11 +7,12 @@ export type State = {
     mode: Mode;
 }
 
+export type ThemeOverrides = Partial<Theme>;
 
 export interface Props {
     mode?: Mode;
     children: JSX.Element;
-    overrides?: any; //TODO: Change this to the theme schema for nexus-design-tokens
+    overrides?: ThemeOverrides;
 }
 
 export type Mode = 'dark' | 'light';

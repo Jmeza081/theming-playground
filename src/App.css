@@ -9,8 +9,11 @@
 }
 
 .myButton {
-  background-color: var(--color-brand-content-none);
-  color: var(--color-brand-content-contrast-none);
+  background-color: black;
+  color: white;
+  height: 56px;
+  border-radius: 8px;
+  padding: 16px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,14 +23,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--color-base-surface-neutral-none);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--color-base-content-strong-none);
 }
 
 .App-link {
